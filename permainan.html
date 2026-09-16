@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permainan - Ayra Kids</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo"><span class="logo-icon">🌈</span> Ayra Kids</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+            <nav class="nav" id="navMenu">
+                <a href="index.html" class="nav-link">🏠 Beranda</a>
+                <a href="huruf.html" class="nav-link">🔤 Belajar Huruf</a>
+                <a href="angka.html" class="nav-link">🔢 Belajar Angka</a>
+                <a href="tebak-huruf.html" class="nav-link">🎯 Tebak Huruf</a>
+                <a href="tebak-angka.html" class="nav-link">🎲 Tebak Angka</a>
+                <a href="belajar-mewarnai.html" class="nav-link">🎨 Mewarnai</a>
+                <a href="permainan.html" class="nav-link active">🎮 Permainan</a>
+                <a href="tentang.html" class="nav-link">ℹ️ Tentang</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>🎮 Permainan</h1>
+            <p>Pilih permainan seru di bawah ini!</p>
+        </section>
+
+        <section class="content-section">
+            <div class="menu-grid">
+                <a href="tebak-huruf.html" class="menu-card" style="--card-color: #FF6B6B;">
+                    <span class="menu-icon">🎯</span>
+                    <h3>Tebak Huruf</h3>
+                    <p>Dengarkan dan tebak hurufnya</p>
+                </a>
+                <a href="tebak-angka.html" class="menu-card" style="--card-color: #4ECDC4;">
+                    <span class="menu-icon">🎲</span>
+                    <h3>Tebak Angka</h3>
+                    <p>Hitung dan tebak angkanya</p>
+                </a>
+                <a href="belajar-mewarnai.html" class="menu-card" style="--card-color: #FFE66D;">
+                    <span class="menu-icon">🎨</span>
+                    <h3>Mewarnai</h3>
+                    <p>Warnai gambar favoritmu</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">🎵 Piano Anak</h2>
+            <div class="game-container">
+                <p class="game-hint">Klik tombol nada untuk memainkan musik!</p>
+                <div class="music-keys" id="musicKeys"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>🌈 Ayra Kids – Belajar Sambil Bermain &copy; 2024</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/permainan.js"></script>
+</body>
+</html>

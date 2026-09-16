@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebak Huruf - Ayra Kids</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo"><span class="logo-icon">🌈</span> Ayra Kids</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+            <nav class="nav" id="navMenu">
+                <a href="index.html" class="nav-link">🏠 Beranda</a>
+                <a href="huruf.html" class="nav-link">🔤 Belajar Huruf</a>
+                <a href="angka.html" class="nav-link">🔢 Belajar Angka</a>
+                <a href="tebak-huruf.html" class="nav-link active">🎯 Tebak Huruf</a>
+                <a href="tebak-angka.html" class="nav-link">🎲 Tebak Angka</a>
+                <a href="belajar-mewarnai.html" class="nav-link">🎨 Mewarnai</a>
+                <a href="permainan.html" class="nav-link">🎮 Permainan</a>
+                <a href="tentang.html" class="nav-link">ℹ️ Tentang</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>🎯 Tebak Huruf</h1>
+            <p>Dengarkan suara, lalu pilih huruf yang benar!</p>
+        </section>
+
+        <section class="content-section">
+            <div class="game-container">
+                <div class="game-score">
+                    <span>⭐ Skor: <span id="score">0</span></span>
+                    <span>🏆 Terbaik: <span id="highScore">0</span></span>
+                </div>
+                <div class="game-question">
+                    <button class="btn btn-primary btn-large" id="speakBtn">🔊 Dengarkan</button>
+                    <p class="game-hint">Huruf apa yang kamu dengar?</p>
+                </div>
+                <div class="game-options" id="optionsGrid"></div>
+                <div class="game-feedback" id="feedback"></div>
+                <button class="btn btn-secondary" id="nextBtn" style="display:none;">Soal Berikutnya ➡️</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>🌈 Ayra Kids – Belajar Sambil Bermain &copy; 2024</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/tebak-huruf.js"></script>
+</body>
+</html>

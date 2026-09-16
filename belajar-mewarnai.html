@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mewarnai - Ayra Kids</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo"><span class="logo-icon">🌈</span> Ayra Kids</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+            <nav class="nav" id="navMenu">
+                <a href="index.html" class="nav-link">🏠 Beranda</a>
+                <a href="huruf.html" class="nav-link">🔤 Belajar Huruf</a>
+                <a href="angka.html" class="nav-link">🔢 Belajar Angka</a>
+                <a href="tebak-huruf.html" class="nav-link">🎯 Tebak Huruf</a>
+                <a href="tebak-angka.html" class="nav-link">🎲 Tebak Angka</a>
+                <a href="belajar-mewarnai.html" class="nav-link active">🎨 Mewarnai</a>
+                <a href="permainan.html" class="nav-link">🎮 Permainan</a>
+                <a href="tentang.html" class="nav-link">ℹ️ Tentang</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>🎨 Mewarnai</h1>
+            <p>Pilih warna, lalu klik gambar untuk mewarnai!</p>
+        </section>
+
+        <section class="content-section">
+            <div class="coloring-container">
+                <div class="color-palette" id="colorPalette"></div>
+                <div class="coloring-canvas-wrapper">
+                    <svg id="coloringCanvas" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="200" cy="200" r="40" fill="#FFFFFF" stroke="#333" stroke-width="3" class="colorable"/>
+                        <ellipse cx="200" cy="130" rx="30" ry="50" fill="#FFFFFF" stroke="#333" stroke-width="3" class="colorable"/>
+                        <ellipse cx="200" cy="270" rx="30" ry="50" fill="#FFFFFF" stroke="#333" stroke-width="3" class="colorable"/>
+                        <ellipse cx="130" cy="200" rx="50" ry="30" fill="#FFFFFF" stroke="#333" stroke-width="3" class="colorable"/>
+                        <ellipse cx="270" cy="200" rx="50" ry="30" fill="#FFFFFF" stroke="#333" stroke-width="3" class="colorable"/>
+                        <ellipse cx="150" cy="150" rx="35" ry="35" fill="#FFFFFF" stroke="#333" stroke-width="3" class="colorable"/>
+                        <ellipse cx="250" cy="150" rx="35" ry="35" fill="#FFFFFF" stroke="#333" stroke-width="3" class="colorable"/>
+                        <ellipse cx="150" cy="250" rx="35" ry="35" fill="#FFFFFF" stroke="#333" stroke-width="3" class="colorable"/>
+                        <ellipse cx="250" cy="250" rx="35" ry="35" fill="#FFFFFF" stroke="#333" stroke-width="3" class="colorable"/>
+                        <rect x="190" y="240" width="20" height="120" fill="#FFFFFF" stroke="#333" stroke-width="3" class="colorable"/>
+                        <ellipse cx="200" cy="360" rx="40" ry="15" fill="#FFFFFF" stroke="#333" stroke-width="3" class="colorable"/>
+                    </svg>
+                </div>
+                <div class="coloring-actions">
+                    <button class="btn btn-secondary" id="clearBtn">🗑️ Hapus Warna</button>
+                    <button class="btn btn-primary" id="saveBtn">💾 Simpan</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>🌈 Ayra Kids – Belajar Sambil Bermain &copy; 2024</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/mewarnai.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Huruf - Ayra Kids</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo"><span class="logo-icon">🌈</span> Ayra Kids</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+            <nav class="nav" id="navMenu">
+                <a href="index.html" class="nav-link">🏠 Beranda</a>
+                <a href="huruf.html" class="nav-link active">🔤 Belajar Huruf</a>
+                <a href="angka.html" class="nav-link">🔢 Belajar Angka</a>
+                <a href="tebak-huruf.html" class="nav-link">🎯 Tebak Huruf</a>
+                <a href="tebak-angka.html" class="nav-link">🎲 Tebak Angka</a>
+                <a href="belajar-mewarnai.html" class="nav-link">🎨 Mewarnai</a>
+                <a href="permainan.html" class="nav-link">🎮 Permainan</a>
+                <a href="tentang.html" class="nav-link">ℹ️ Tentang</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>🔤 Belajar Huruf</h1>
+            <p>Klik kartu huruf untuk mendengar suaranya!</p>
+        </section>
+
+        <section class="content-section">
+            <div class="letter-grid" id="letterGrid"></div>
+        </section>
+
+        <div class="modal-overlay" id="letterModal">
+            <div class="modal-box">
+                <button class="modal-close" id="modalClose">✕</button>
+                <div class="modal-letter" id="modalLetter">A</div>
+                <div class="modal-object" id="modalObject">Apel 🍎</div>
+                <button class="btn btn-primary" id="modalSpeak">🔊 Dengar Lagi</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>🌈 Ayra Kids – Belajar Sambil Bermain &copy; 2024</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/huruf.js"></script>
+</body>
+</html>
